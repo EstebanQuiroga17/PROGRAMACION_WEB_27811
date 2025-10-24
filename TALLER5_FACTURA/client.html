@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO CLIENTE</h1>
+        <p>Complete los datos para registrar</p>
+        <figure>
+            <img src="BarSinso.jpeg" 
+            height="250">
+            <figcaption>
+                Bar Sinso
+                <time datetime="22
+                "></time>
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <form action="product.html" method="get">
+            <table border = "2">
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="nombres">Nombres:</label>
+                        </th>
+                        <th>
+                            <input type="text" name="nombres" id="nombres" placeholder="ejm: Rircardo"maxlength="20"minlength="1"
+                        </th>
+                        <th>
+                            <label for="apellidos">Apellidos:</label>
+                        </th>
+                        <th>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="ejm: Monge"maxlength="20"minlength="1">
+                        </th>
+                        <!-- direccion
+                        correo -->
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <label for="correo">Correo:</label>
+                        </th>
+                        <th colspan="2">
+                            <input type="email" name="email" id="correo" value="@espe.edu.ec"size="25">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            Direccion
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pro">Provincia:</label>
+                        </th>
+                        <th>
+                            <select name="Provincia" id="pro" required>
+                            <option value="">Selecione...</option>
+                            <option value="Tungurahua">Tungurahua</option>
+                            <option value="Pichincha">Pichincha</option>
+                            <option value="Orellana">Orellana</option>
+                            <option value="Azuay">Azuay</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Cañar">Cañar</option>
+                            <option value="Chimborazo">Chimborazo</option>
+                            </select>
+                        </th>
+                        <th>
+                            <label for="can">Canton:</label>
+                        </th>
+                        <th>
+                            <select name="Canton" id="can" required>
+                            <option value="">Selecione...</option>
+                            <option value="Quito">Quito</option>
+                            <option value="Guayaquil">Guayaquil</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Azuay">Azuuay</option>
+                            <option value="Carchi">Carchi</option>
+                            <option value="Esmeraldas">Esmeraldas</option>
+                            <option value="Imbabura">Imbabura</option>
+                            </select>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="reset">
+        </form>
+    </main>
+</body>
+</html>

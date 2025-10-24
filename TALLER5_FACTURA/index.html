@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Factura</title>
+	</head>
+	<body>
+		<header>
+			<h1>Factura</h1>
+			<address>
+				<ul>
+					<li>Bar Sinso</li>
+					<li>Av. Occidental, Quito, Pichincha 92866</li>
+					<li>0987654321</li>
+					<li>epato@gmail.com</li>
+				</ul>
+			</address>
+			<figure>
+            <img src="BarSinso.jpeg" alt="">
+        </figure>
+		</header>
+		<main>
+			<h2>Datos del Cliente</h2>
+			<address>
+				<ul>
+					<li>Chin Chu-Lin</li>
+					<li>Guayaquil</li>
+					<li>0987654321</li>
+					<li>cchulin@gmail.com</li>
+				</ul>
+			</address>
+			<h3>Detalle</h3>
+			<table border="2">
+				<tr>
+					<th>Factura #</th>
+					<td>101138</td>
+				</tr>
+				<tr>
+					<th>Fecha</th>
+					<td>January 1, 2012</td>
+				</tr>
+				<tr>
+					<th>Monto</th>
+					<td>600.00</td>
+				</tr>
+			</table>
+			<br>
+			<table border="2">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Descripcion</th>
+						<th>Precio</th>
+						<th>Cantidad</th>
+						<th>Total</th>
+						<th>Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Omnitrix</td>
+						<td>Relojeria de lujo</td>
+						<td>$150.00</td>
+						<td>4</td>
+						<td>$600.00</td>
+						<td>
+							<input type="color" name="color" id="color">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<table border="2">
+				<tr>
+					<th><span>Total</span></th>
+					<td>$600</td>
+				</tr>
+				<tr>
+					<th><span>Pagado</span></th>
+					<td>$600</td>
+				</tr>
+				<tr>
+					<th><span>Deuda</span></th>
+					<td>0.00</td>
+				</tr>
+			</table>
+		</main>
+		<footer>
+			<form action="invoice.html" method="get">
+				<label for="submit">Imprimir Factura</label>
+				<input type="submit" id="submit" name="submit" value="Imprimir">
+			</form>
+		</footer>
+	</body>
+</html>

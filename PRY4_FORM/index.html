@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMUARIOS</title>
+</head>
+<body>
+    <header>
+        <h2>FORMULARIO PARA DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+
+            <label for="apellidos">INGRESE SU APELLIDO</label>
+            <input 
+                type="text" 
+                name="apellidos" 
+                id="apellidos" 
+                placeholder="Ej : QUIROGA" 
+            >
+
+            <label for="nombres">INGRESE SU NOMBRE</label>
+            <input 
+                type="text" 
+                name="nombres" 
+                id="nombres" 
+                placeholder="Ej : ESTEBAN" 
+            >
+
+            <!-- NUMBER -->
+
+            <label for="edad">INGRESE SU EDAD</label>
+            <input 
+                type="number" 
+                name="edad" 
+                id="edad" 
+                min="5" 
+                max="75" 
+                placeholder="Ej: 20"
+            >
+
+            <!-- EMAIL -->
+
+            <label for="email">INGRESA TU EMAIL</label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="eaquiroga@espe.edu.ec"
+            
+            >
+
+            <!-- FECHA -->
+            
+            <label for="fecha">INGRESA TU FECHA DE NACIMIENTO</label>
+            <input 
+                type="date"
+                name="fecha_nacimiento"
+                id="fecha"
+                placeholder="09/03/2005"
+                value="2025-10-22"
+                max="2025-10-22"
+                min="1900-10-22"
+            >
+
+            <!-- SEXO -->
+
+            <p>SEXO?</p>
+            <label for="SI">SI GRACIAS</label>
+            <input 
+                type="radio" 
+                name="sexo" 
+                id="SI" 
+                value="SI PLS" 
+                checked
+            >
+
+            <!-- RADIO -->
+
+            <label for="NO">NO GRACIAS</label>
+            <input 
+                type="radio" 
+                name="sexo" 
+                id="NO" 
+                value="SI PLS" 
+                disabled
+            >
+
+            <!-- CHECKBOX -->
+            <p>DIAS DE CLASE DE PROGRAMACION WEB</p>
+            <label for="lunes">Lunes</label>
+            <input type="checkbox" name="dias[]" id="lunes">
+            <label for="martes">Martes</label>
+            <input type="checkbox" name="dias[]" id="martes">
+            <label for="miercoles">Miercoles</label>
+            <input type="checkbox" name="dias[]" id="miercoles">
+            <label for="jueves">jueves</label>
+            <input type="checkbox" name="dias[]" id="jueves">
+            <label for="viernes">Viernes</label>
+            <input type="checkbox" name="dias[]" id="viernes">
+
+            <!-- FILE -->
+
+            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+            <input 
+                type="file" 
+                name="foto" 
+                id="foto"
+                accept="image/*"
+            >
+
+            <!-- COLOR  -->
+            <label for="color">SELECCIONE SU COLOR FAVORITO</label>
+            <input 
+                type="color" 
+                name="color" 
+                id="color"
+                value="#58bf2b"
+            >
+
+
+            <!-- RANGE -->
+            <label for="estatura">SELECCIONE SU ESTATURA</label>
+            <input 
+                type="range"
+                name="estatura"
+                id="estatura"
+                min="10"
+                max="250"
+                value="170"
+            >
+
+            <!-- SEARCH -->
+            <label for="cedula">BUSCAR POR CEDULA</label>
+            <input type="search" name="cedula" id="cedula">
+
+            <!-- PASSWORD -->
+
+            <label for="password">INGRESE SU CONTRASENIA</label>
+            <input type="password" name="password" id="password">
+
+            <!-- HIDDEN -->
+
+            <input type="hidden" name="ubicacion" id="ubicacion" value="aca">
+            
+            <!-- RESET -->
+            <label for="vaciar">VACIAR FORMULARIO</label>
+            <input type="reset" name="vaciar" id="vaciar">
+
+            <!-- SUBMIT -->
+            <label for="submit">ENVIAR FORMULARIO</label>
+            <input type="submit" name="submit" id="submit">
+
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
