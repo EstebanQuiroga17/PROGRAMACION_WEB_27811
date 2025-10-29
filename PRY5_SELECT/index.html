@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <header>
+        <h1>SELECT EN FORMULARIOS</h1>
+        <form action="server.html" method="get">
+            <!-- SELECT PARA FORM -->
+            <fieldset>
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+                    <select name="lenguaje_programacion" id="lenguaje_programacion">
+                        <optgroup title="REGGAETON" label="REGGAETON">
+                            <option value="c_mas_mas">C++</option>
+                            <option value="Java">JAVA</option>
+                            <option value="Python">PYTHON</option>
+                            <option value="html" disabled>HTML</option>
+                        </optgroup>
+                        <input type="date">
+                    </select>
+            </fieldset>
+            <br>
+
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required autofocus>
+                <optgroup title="REGGAETON" label="REGGAETON">
+                    <option value="LOBA">SHAKIRA LOBA</option>
+                    <option value="Anoche" selected>BAD BUNNY ANOCHE</option>
+                    <option value="ALL_OF_ME">JHON LENON ALL OF ME</option>
+                    <option value="TRISTE" disabled>JOSE JOSE TRISTE</option>
+                </optgroup>
+            </select>
+            <br>
+
+            <!-- TEXTAREA PARA FORM -->
+            <label for="frase_motivadora">INGRESE SU FRASE</label>
+                <textarea name="frase_motivadora" id="frase_motivadora" rows="5" cols="20" required>No has dicho nada</textarea>
+            <br>
+
+            <!-- hidden -->
+                <input type="hidden" name="cedula_usuario" value="123465789">
+            <br>
+            <button type="submit">ENVIAR AL SERVER</button>
+        </form>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

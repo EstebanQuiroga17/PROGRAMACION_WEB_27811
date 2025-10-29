@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO PARA ESTUDIANTES DE NUEVO INGRESO</h1>
+    </header>
+    <main>
+        <form action="../server.html" method="get">
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th colspan="4">INGRESE SUS DATOS PERSONALES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><label for="name">NOMBRE</label></th>
+                        <th><input type="text" name="name" id="name" required placeholder="ESTEBAN"></th>
+
+                        <th><label for="surname">APELLIDO</label></th>
+                        <th><input type="text" name="surname" id="surname" required placeholder="Quiroga"></th>
+                    </tr>
+
+                    <tr>
+                        <th><label for="cedula">CEDULA</label></th>
+                        <th><input type="number" name="cedula" id="cedula" required placeholder="1805769134" pattern="[0-9]{10}"></th>
+
+                        <th><label for="birthdate">FECHA DE NACIMIENTO</label></th>
+                        <th><input type="date" name="birthdate" id="birthdate" required max="2010-10-27" min="2005-10-27"></th>
+                    </tr>
+
+                    <tr>
+                        <th><label for="subjects">MATERIAS</label></th>
+                        <td align="center">
+                            <select name="subjects[]" id="subjects" required multiple size="5">
+                                <option value="math">Matematicas</option>
+                                <option value="english">Ingles</option>
+                                <option value="science">Ciencias</option>
+                                <option value="language">Lenguaje</option>
+                                <option value="art">Arte</option>
+                                <option value="entenprenourshipment" disabled>Emprendimiento</option>
+                            </select>
+                        </td>
+                        <th>
+                            <label for="cv">HOJA DE VIDA</label>
+                        </th>
+                        <td>
+                            <input type="file" required accept="application/pdf" name="cv" id="cv">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" align="center">
+                            <label for="banner">ID BANNER</label>
+                        </th>
+                        <td colspan="2" align="center">
+                            <input type="text" name="banner" id="banner" pattern="[A-Z]{3}+[0-9]{5}" required>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <label for="submit">ENVIAR DATOS</label>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
