@@ -8,17 +8,42 @@
 </head>
 <body>
     <h1>DOCUMENTO CSS EXTERNO</h1>
-    <textarea name="tarea" id="tarea"></textarea>
-    <input type="text" id="input" placeholder="ESTEBAN">
-
-    <select name="select" id="select">
-        <option value="" id="select">opcion 1</option>
-    </select>
-    <br>
-    <label for="checkbox">no</label>
-    <input type="checkbox" name="" id="checkbox">
-    <br>
-    <label for="radio">si</label>
-    <input type="radio" name="si" id="radio">
+    <form action="" style="max-width:700px; margin:20px auto; padding:18px; background:#f7f7fb; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.08);">
+        <label for="nombre">Nombre</label>
+        <br>
+        <input type="text" id="nombre" placeholder="Esteban" style="width:100%; padding:8px; box-sizing:border-box;">
+        <br>
+        <label for="apellido">Apellido</label>
+        <br>
+        <input type="text" id="apellido" placeholder="Quiroga" style="width:100%; padding:8px; box-sizing:border-box;">
+        <br>
+        <label for="input">Correo</label>
+        <br>
+        <input type="text" id="input" placeholder="correo@ejemplo.com" style="width:100%; padding:8px; box-sizing:border-box;">
+        <br>
+        <label for="select">País</label>
+        <br>
+        <select name="select" id="select" style="width:100%; padding:8px; box-sizing:border-box;">
+            <option value="">Selecciona...</option>
+            <option value="1">Opción 1</option>
+        </select>
+        <br>
+        <label for="tarea">Comentarios</label>
+        <br>
+        <textarea name="tarea" id="tarea" style="width:100%; min-height:100px; padding:8px; box-sizing:border-box;" placeholder="Escribe tus comentarios aquí..."></textarea>
+        <br>
+        <label>Género</label>
+        <br>
+        <input type="radio" name="genero" id="radio" value="masculino">
+        <label for="radio">Masculino</label>
+        <input type="radio" name="genero" id="radio2" value="femenino">
+        <label for="radio2">Femenino</label>
+        <br>
+        <label for="checkbox">Suscribirse a boletín</label>
+        <input type="checkbox" id="checkbox">
+        <br>
+        <br>
+        <input type="submit" value="Enviar" style="padding:10px 16px; border-radius:6px; border:1px solid #bdbdbd; background:#e9e9ff; cursor:pointer;">
+    </form>
 </body>
 </html>
