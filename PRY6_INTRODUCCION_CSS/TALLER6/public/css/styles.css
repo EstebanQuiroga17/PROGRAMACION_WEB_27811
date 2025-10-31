@@ -17,3 +17,8 @@
     #radio {
         margin-left: 300px; 
     }
+
+    label {
+        font-family: 'Courier New', Courier, monospace; 
+        color: red;
+    }
