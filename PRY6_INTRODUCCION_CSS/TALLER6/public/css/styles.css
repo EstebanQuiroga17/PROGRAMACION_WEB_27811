@@ -1,24 +1,41 @@
+    #input, #select {
+        font-size: 14px;
+    }
+
+    #checkbox, #radio {
+        width: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
     #tarea{
         background-image: url(https://imgs.search.brave.com/8wWCIOcTYRWYMRHPnkU-F2m9QHEfsTfECprT9KNsU9A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMzLm1lbWVkcm9p/ZC5jb20vaW1hZ2Vz/L1VQTE9BREVEODgz/LzVlNzJmYzZlNjc4/ZDcuanBlZw);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        border: 2px solid #ddd;
     }
 
     #select{
         border-radius: 8px; 
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
     }
 
     #input {
         color: #f71717; 
+        padding: 6px 10px;
+        border: 1px solid #bbb;
+        background-color: #ffffff;
     }
 
     #checkbox {
         height: 60px; 
+        margin: 8px 4px;
     }
 
     #radio {
         margin-left: 300px; 
-    }
-
-    label {
-        font-family: 'Courier New', Courier, monospace; 
-        color: red;
+        height: 20px;
     }
