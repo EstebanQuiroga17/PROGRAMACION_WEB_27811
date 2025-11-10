@@ -1,0 +1,103 @@
+<!-- Contact Section -->
+<section class="py-5">
+    <div class="container px-4 px-lg-5">
+        <!-- Contact Section Heading-->
+        <h2 class="fw-bolder text-center mb-4">Contáctanos</h2>
+        
+        <!-- Contact Form-->
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <form id="contactForm" class="card p-4">
+                    <!-- Name input-->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="name" name="name" 
+                            required minlength="3" maxlength="50" 
+                            pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                            placeholder="Ej: Juan Pérez"
+                            title="Por favor ingrese un nombre válido (solo letras y espacios)">
+                    </div>
+
+                    <!-- Email input-->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            required
+                            placeholder="nombre@ejemplo.com">
+                        <div class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password"
+                            required minlength="8"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                            title="La contraseña debe tener al menos 8 caracteres, incluyendo letras y números">
+                        <div class="form-text">Mínimo 8 caracteres, debe incluir letras y números.</div>
+                    </div>
+
+                    <!-- Age input -->
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="age" name="age"
+                            required min="18" max="120"
+                            placeholder="Ej: 25">
+                    </div>
+
+                    <!-- Category select -->
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Categoría de interés</label>
+                        <select class="form-select" id="category" name="category" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="ropa">Ropa</option>
+                            <option value="calzado">Calzado</option>
+                            <option value="accesorios">Accesorios</option>
+                            <option value="deportes">Deportes</option>
+                        </select>
+                    </div>
+
+                    <!-- Message textarea -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message"
+                            required minlength="20" maxlength="500"
+                            rows="4"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <div class="form-text">Máximo 500 caracteres.</div>
+                    </div>
+
+
+                    <!-- Submit and Reset buttons -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
+                        </button>
+                        <button type="reset" class="btn btn-outline-secondary">
+                            <i class="fas fa-undo me-2"></i>Limpiar formulario
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Form validation feedback modal -->
+<div class="modal fade" id="formModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Formulario enviado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Gracias por contactarnos. Te responderemos pronto.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
