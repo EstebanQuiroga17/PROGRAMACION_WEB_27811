@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INGRESO DE PRODUCTO
+    </title>
+</head>
+<body>
+
+    <header>
+        <h1>FORMULARIO PRODUCTO</h1>
+        <p>Complete los datos para registrar el producto</p>
+    </header>
+    
+    <main>
+
+        <form action="index.html" method="get">
+
+            <!-- DATOS DEL PRODUCTO -->
+
+            <table border="2">
+
+                <thead>
+                    <tr>
+                        <th>
+                            <label for="nombre">Nombre</label>
+                        </td>
+                        <th>
+                            <label for="precio">Precio</label>
+                        </td>
+                        <th>
+                            <label for="descripcion">Descripcion</label>
+                        </td>
+                        <th>
+                            <label for="stock">Cantidad</label>
+                        </td>
+                        <th>
+                            <label for="color">Color</label>
+                        </th>
+                    </tr>
+
+                    
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ej. Tacos, Burritos..." required>
+                        </td>
+                        <td>
+                            <input type="text" name="precio" id="precio" placeholder="$$$" required pattern="[0-9]{0,4}" size="4">
+                        </td>
+                        <td>
+                            <input type="text" name="descripcion" id="descripcion" placeholder="Escriba aquí la descripcion del produto." size="27">
+                        </td>
+                        <td>
+                            <input type="number" name="stock" id="stock" placeholder="Ej. 3" required size="3">
+                        </td>
+                        <td>
+                            <input type="color" name="color" id="color">
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table><br>
+
+            <input type="submit" value="Registar Producto">
+            <input type="reset" value="Restablecer Formulario">
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>Derechos reservados por Bar Sinso 2025</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformador de Temperaturas</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Transformador de Temperaturas</h1>
+    </header>
+    
+    <main class="container">
+        <div class="col-sm-3">Temperatura
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="temperatura" placeholder="0.00">
+                    <label for="temperatura">INGRESE SU TEMPERATURA</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button
+                        type="button"
+                        name=""
+                        id="btn_calcular_temps"
+                        class="btn btn-primary"
+                    >
+                        CALCULAR
+                    </button>
+                </div>
+                <h1>CELSIUS</h1>
+                <h2 id="temperatura_celsius">0.00</h2> 
+                <h1>FAHRENHEIT</h1>
+                <h2 id="temperatura_far">0.00</h2>
+
+        </div>
+    </main>
+
+    <script src="../public/js/temperaturas.js"></script>
+</body>
+</html>
