@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos en JS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Objetos en JS</h1>
+        <hr>
+
+        <div id="datos_persona"></div>
+        
+        <hr>
+
+        <div class="row g-3">
+            
+            <div class="col-md-6">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres">
+            </div>
+            <div class="col-md-6">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos">
+            </div>
+            <div class="col-6">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="text" class="form-control" id="edad" placeholder="18">
+            </div>
+            <div class="col-md-4">
+                <label for="puesto" class="form-label">Puesto</label>
+                <select id="puesto" class="form-select">
+                    <option selected>Profesor</option>
+                    <option>Estudiante</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="estatura" class="form-label">Estatura</label>
+                <input type="text" class="form-control" id="estatura" placeholder="1.75">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="mayorDeEdad">
+                <label class="form-check-label" for="mayorDeEdad">
+                    Mayor de edad
+                </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" id="btn_actualizar">Actualizar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/objetos.js"></script>
+</body>
+</html>
