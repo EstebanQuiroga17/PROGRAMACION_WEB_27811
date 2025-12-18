@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicar</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-floating mb-3">
+            <input
+                type="text"
+                class="form-control"
+                name="numero"
+                id="numero"
+                placeholder=""
+            />
+            <label for="numero">Ingrese un numero</label>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name="btn_limpiar_tabla"
+                id="btn_limpiar_tabla"
+                class="btn btn-primary"
+            >
+                Limpiar tabla
+            </button>
+
+            <button
+                type="button"
+                name="btn_mostrar_tabla"
+                id="btn_mostrar_tabla"
+                class="btn btn-primary"
+            >
+                Mostrar tabla
+            </button>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <p id="txt_resultado"></p>
+    </div>
+
+    <script src="./public/js/tabla.js"></script>
+</body>
+</html>

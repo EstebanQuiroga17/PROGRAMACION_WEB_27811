@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"> 
+
+        <h1>Mostrar Numeros 1-10</h1>
+
+        <div class="mb-3">
+            <label for="inicio" class="form-label">Numero de inicio</label>
+            <input
+                type="text"
+                class="form-control"
+                id="inicio"
+                aria-describedby="helpId"
+                placeholder=""
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="fin" class="form-label">Numero de fin</label>
+            <input
+                type="text"
+                class="form-control"
+                id="fin"
+                aria-describedby="helpId"
+                placeholder=""
+            />
+        </div>
+        
+        
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                id="btn_mostrar_numero"
+                class="btn btn-primary"
+            >
+                Contar
+            </button>
+        </div>
+        
+        <p id="txt_resultado"></p>
+
+    </div>
+
+    <script src="./public/js/contador.js"></script>
+</body>
+</html>
